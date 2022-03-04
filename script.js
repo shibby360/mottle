@@ -78,6 +78,7 @@ function keydownr(keyt) {
   var ev = {key:keyt}
   var div = document.querySelector('#gameboard > #row'+rowindex)
   var children = Array.from(div.children)
+  console.log(ev.key)
   if(ev.key === 'Backspace' || ev.key === 'effacez') {
     for(var i = children.length-1; i >= 0; i--) {
       if(children[i].innerText !== '') {
@@ -96,6 +97,6 @@ for(var i in btns) {
       letterfunc(ev.target.innerHTML.toLowerCase())
     })
   } else {
-    btns[i].addEventListener('click', (ev) => { keydownr(ev.key) })
+    btns[i].addEventListener('click', (ev) => { keydownr(ev.target.innerHTML.toLowerCase()) })
   }
 }
