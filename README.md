@@ -1,2 +1,0 @@
-# mottle
-wordle in french!
