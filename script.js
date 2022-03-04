@@ -36,6 +36,7 @@ var letterfunc = function(letter) {
       }
     }
   } else if(ev.key === 'Enter' || ev.key === 'entrez') {
+    infor.innerText = ''
     var word = ''
     for(var i in children) {
       word += children[i].innerText
@@ -68,9 +69,16 @@ var letterfunc = function(letter) {
         })
         if(correct) {
           done = true
+          infor.innerText = 'Bon travaille!'
+        } else {
+          if(rowindex === 5) {
+            infor.innerText = 'Le mot est ' + now_word
+          }
         }
         rowindex ++;
       }
+    } else {
+      infor.innerText = 'Le mot n\'a pas cinq lettres'
     }
   }
 }
