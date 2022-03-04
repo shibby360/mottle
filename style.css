@@ -1,0 +1,26 @@
+body * {
+  font-family: sans-serif;
+}
+#gameboard > div {
+  width: 200px;
+  height: 50px;
+}
+#gameboard > div > *, #keyboard div {
+  border: 3px black solid;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+#keyboard {
+  display: flex;
+  justify-content: center;
+}
+#keyboard div {
+  width: 30px;
+  height: 30px;
+}
+#keyboard div.wordss {
+  width: 100px;
+}
