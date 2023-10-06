@@ -1,6 +1,10 @@
 body * {
   font-family: sans-serif;
 }
+#gameboard {
+  margin: auto;
+  width: 200px;
+}
 #gameboard > div {
   width: 200px;
   height: 50px;
@@ -16,6 +20,7 @@ body * {
 #keyboard {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #keyboard div {
   width: 30px;
@@ -24,4 +29,11 @@ body * {
 #keyboard div.wordss {
   width: 100px;
 }
-
+.break {
+  flex-basis: 100%;
+  height: 0px;
+}
+hr {
+  border: none;
+  flex-basis: 100%;
+}
