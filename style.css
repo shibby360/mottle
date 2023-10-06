@@ -1,6 +1,9 @@
 body * {
   font-family: sans-serif;
 }
+#infomenu {
+  text-align: center;
+}
 #gameboard {
   margin: auto;
   width: 200px;
